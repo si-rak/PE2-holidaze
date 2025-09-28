@@ -1,0 +1,9 @@
+/* src/styles/tokens.css */
+:root {
+  --color-bg: #f9fafb;
+  --color-card: #ffffff;
+  --color-action-bg: #2563eb;
+  --color-action-fg: #ffffff;
+  --color-action-hover: #1e40af;
+  --color-error: #dc2626;
+}
