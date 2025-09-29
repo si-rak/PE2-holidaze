@@ -32,7 +32,7 @@ It demonstrates modern frontend practices, API integration, and routing using **
 
 ## Live Demo
 
-[View the deployed project on Netlify](https://pe-2.netlify.app/)
+[View the deployed project on Netlify](https://pe-2holidaze.netlify.app/)
 
 ---
 
