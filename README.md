@@ -36,6 +36,12 @@ It demonstrates modern frontend practices, API integration, and routing using **
 
 ---
 
+## Repository
+
+[View the source code on GitHub](https://github.com/si-rak/PE2-holidaze)
+
+---
+
 ## Setup & Installation
 
 ### 1. Clone the repository
