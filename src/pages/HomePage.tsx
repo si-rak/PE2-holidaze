@@ -17,7 +17,7 @@ export default function HomePage() {
     (async () => {
       try {
         const res = await getVenues();
-        setVenues(res.data);
+        setVenues(Array.isArray(res) ? res : (res as any).data || []);
       } catch (err: any) {
         setError(err.message);
       } finally {
@@ -26,11 +26,13 @@ export default function HomePage() {
     })();
   }, []);
 
-  const filteredVenues = venues.filter(
-    (venue) =>
-      venue.name.toLowerCase().includes(search.toLowerCase()) ||
-      venue.location?.city?.toLowerCase().includes(search.toLowerCase())
-  );
+  const filteredVenues = Array.isArray(venues)
+    ? venues.filter(
+        (venue) =>
+          venue.name.toLowerCase().includes(search.toLowerCase()) ||
+          venue.location?.city?.toLowerCase().includes(search.toLowerCase())
+      )
+    : [];
 
   function handleBrowseVenues() {
     popularRef.current?.scrollIntoView({ behavior: 'smooth' });

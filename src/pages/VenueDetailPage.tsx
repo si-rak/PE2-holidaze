@@ -25,7 +25,7 @@ export default function VenueDetailPage() {
       try {
         if (!id) return;
         const res = await getVenue(id);
-        setVenue(res.data);
+        setVenue((res as any).data || res);
       } catch (e: any) {
         setError(e.message || 'Failed to load venue');
       } finally {
@@ -44,9 +44,6 @@ export default function VenueDetailPage() {
     }
 
     try {
-      // 🔍 Debugging: log the venueId being sent
-      console.log('Booking with venueId:', id);
-
       await createBooking(
         { dateFrom, dateTo, guests, venueId: String(id) },
         token
