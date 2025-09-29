@@ -30,15 +30,23 @@ It demonstrates modern frontend practices, API integration, and routing using **
 
 ---
 
+## Live Demo
+
+[View the deployed project on Netlify](https://splendorous-hamster-28e37c.netlify.app/)
+
+---
+
 ## Setup & Installation
 
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd holidaze
+git clone https://github.com/si-rak/PE2-holidaze.git
+cd PE2-holidaze
 ```
+
+---
 
 ## Acknowledgments
 
-A huge thank you to my teachers at Noroff for their continuous guidance, support, and feedback. I also acknowledge that I used ChatGPT to ask for clarifications whenever I got stuck.This helped me understand concepts and continue progressing, while ensuring I wrote and implemented the code myself.
+A huge thank you to my teachers at Noroff for their continuous guidance, support, and feedback. I also acknowledge that I used ChatGPT to ask for clarifications whenever I got stuck. This helped me understand concepts and continue progressing, while ensuring I wrote and implemented the code myself.
